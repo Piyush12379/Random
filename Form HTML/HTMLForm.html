@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="Get"> 
+        <!--method=post-->
+        <label for="Uname">Enter Name: </label>
+        <input type="text" id="uname" name="uname" size="30" maxlength="5" placeholder="Enter your name" value="by default it will be visible...and placeholder will not visible">
+        <br>
+        <br>
+        <label for="pass">Enter password:</label>&nbsp;
+        <input type="password" name="pass" id="pass" placeholder="Enter Password"required>
+        <br> 
+        <br>
+        <label for="email1">Enter email: </label>
+        <input type="email" name="email1" id="email1" placeholder="enter your email">
+        <br>
+        <br>
+        <!--for multi line textbox,we will use textarea tag-->
+        <label for="review">Enter review: </label>
+        <br>
+        <textarea name="review" id="review" row="6" cols="6" ></textarea>
+        <br>
+        <br>
+
+        <label for="hobby">Choose your hobby: </label>
+        <input type="checkbox" id="hobby" name="hobby" value="cook">cooking
+        <input type="checkbox" id="hobby" name="hobby" value="journal" checked>reading journals
+        <!--reading journals will be automatically checked by using attribut "checked"-->
+        
+        <input type="checkbox" id="hobby" name="hobby" value="Sing">Singing
+        <br>
+        <!-- 
+                On the backened what value will be stored on database from checkbox? - we need to use value attribute...whatever we write inside value it will be visible->
+          -->
+                <br>
+                <label for="course">choose your course:</label>
+                <input type="radio" id="course" name="btech" value="btech">
+                <label for="btech"></label>Btech</label>
+
+                <input type="radio" id="Bca" name="course" value="Bca" checked>
+                <label for="Bca">BCA</label>
+                <!--by default checked-->
+                <input type="radio" id="mba" name="course" value="Mba">MBA
+                <label for="mba"></label>
+                <br>
+                <br>
+                <label for="statesel">Select state: </label>
+                <!-- <select name="statesel" id="statesel" size="3" multiple > -->
+                    <select name="statesel" id="statesel">
+                    <option value="Choose">choose your state</option>
+                    <option value="punjab">Punjab</option>
+                    <option value="kr">kerala</option>
+                    <option value="Hp" selected>Himachal pradesh</option>
+                    <!--selected attribute used for by default-->
+                </select>
+                <br>
+                <br>
+                <label for="filesel">Choose File:</label>
+                <input type="file" name="filesel" id="filesel" accept="image/*">
+                <!--accept attribute will only accept image types files -->
+                <br>
+                <br>
+                <input type="Submit" name="submitform"id="submitForm" value="Submit Form"> &nbsp;&nbsp;
+                <!-- <br>
+                <br> -->
+                <input type="reset" name="resetForm" id="resetForm" value="Reset form">
+                <br>
+                <br>
+                <input type="image" name="imagesel" id="imagesel" src="http://freepngimg.com/download/submit_button/25511-7-submit-button-picture.png" width="100" height="50" >
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+    <style>
+        .container{
+            border:5px black solid;
+            padding:40px;
+            display:grid;
+            background-color: yellow;
+        }
+
+        .item{
+            border:2px black solid;
+            padding:10px;
+            background-color: orange;
+
+        }
+        #i0{
+            padding:20px ;
+            text-align:center;
+
+        }
+        #i1 {
+      grid-row: 2 / 4;      /* Span 2 rows */
+      text-align: center;   /* Center inline text horizontally */
+       display: grid;        /* Make #i1 a grid container */
+      place-items: center;  /* Center content both horizontally and vertically */
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i0">Famous Tourism places of India</div>
+        <div class="item" id="i1">image 1</div>
+        <div class="item">image2</div>
+        <div class="item">image3</div>
+        <div class="item">image 4</div>
+        
+        <div class="item">paragraph for 5</div>
+        <div class="item">footer</div>
+    </div>
+    
+</body>
+</html>
